@@ -1,0 +1,1 @@
+This repository demonstrates a subtle bug in Lua related to modifying tables while iterating over them using `pairs`. The `bug.lua` file contains code that recursively traverses a nested table.  If the table's structure is altered within the loop, `pairs` might skip elements. The `bugSolution.lua` file offers a solution that addresses this issue using a copy of the table.
